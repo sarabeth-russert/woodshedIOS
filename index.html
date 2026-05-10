@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#F5EDD9" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#1C1007" media="(prefers-color-scheme: dark)">
+    <title>Woodshed — Record Tunes at Jams &amp; Festivals (iPhone)</title>
+    <meta name="description" content="Never lose a tune you learned. Record players at festivals and workshops, tag the tune and instrument, slow it down, loop the hard parts, and build your own searchable library.">
+    <meta name="keywords" content="woodshed app, old time music app, bluegrass app, folk music recorder, slow down music app, tune learning app, jam session recorder, traditional music, banjo, fiddle, guitar, mandolin">
+    <meta name="author" content="Sara Russert">
+
+    <!-- TODO: Uncomment and add App Store ID when the app is live -->
+    <!-- <meta name="apple-itunes-app" content="app-id=XXXXXXXXXX"> -->
+
+    <link rel="icon" type="image/png" sizes="128x128" href="assets/favicon-128.png">
+    <link rel="apple-touch-icon" href="assets/app-icon-256.png">
+    <link rel="stylesheet" href="assets/site.css">
+
+    <!-- Social sharing -->
+    <meta property="og:title" content="Woodshed — Record Tunes at Jams &amp; Festivals">
+    <meta property="og:description" content="Never lose a tune you learned. Record players at festivals and workshops, slow it down, loop the hard parts, and build your searchable tune library.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sararussert.github.io/woodshed/">
+    <meta property="og:image" content="https://sararussert.github.io/woodshed/assets/screenshots/02_player.jpg">
+    <meta property="og:site_name" content="Woodshed">
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Woodshed — Never Lose a Tune You Learned">
+    <meta name="twitter:description" content="Record anyone playing at jams and festivals. Tag it, slow it down, loop the tricky parts.">
+    <meta name="twitter:image" content="https://sararussert.github.io/woodshed/assets/screenshots/02_player.jpg">
+    <link rel="canonical" href="https://sararussert.github.io/woodshed/">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MobileApplication",
+      "name": "Woodshed",
+      "description": "Record players at festivals, workshops, and jams. Tag the tune, player, and instrument. Slow it down without changing pitch. Loop sections. Build a searchable library of everything you've learned.",
+      "applicationCategory": "MusicApplication",
+      "operatingSystem": "iOS 17.0",
+      "url": "https://sararussert.github.io/woodshed/",
+      "author": { "@type": "Person", "name": "Sara Russert" },
+      "featureList": [
+        "Record video at festivals, workshops, and jams",
+        "Tag recordings with tune name, player, instrument, and notes",
+        "Searchable library",
+        "Variable playback speed without pitch change",
+        "A/B/C section looping",
+        "Chapter marks and jump points"
+      ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Mobile install banner — enable when App Store ID is ready -->
+    <div class="install-banner" id="installBanner" role="banner">
+        <button class="close" id="installBannerClose" aria-label="Dismiss">&times;</button>
+        <img class="icon" src="assets/app-icon-256.png" alt="">
+        <div class="info">
+            <strong>Woodshed</strong>
+            <span>Free on the App Store &mdash; iPhone</span>
+        </div>
+        <!-- TODO: Replace href with real App Store link -->
+        <a class="get" href="https://apps.apple.com/app/idPLACEHOLDER">Get</a>
+    </div>
+
+    <div class="hero">
+        <div class="hero-inner">
+            <img class="hero-icon" src="assets/app-icon.png" alt="Woodshed app icon">
+
+            <h1>Woodshed</h1>
+            <div class="tagline">Don&rsquo;t lose the good stuff.</div>
+            <div class="subtitle">Record anyone playing at festivals, workshops, and jams. Tag the tune, the player, and the instrument. Slow it down, loop the hard parts, and build your own searchable library.</div>
+
+            <div class="pills" aria-label="Instruments">
+                <span class="pill">Banjo</span>
+                <span class="pill">Fiddle</span>
+                <span class="pill">Guitar</span>
+                <span class="pill">Mandolin</span>
+                <span class="pill">Dulcimer</span>
+            </div>
+
+            <!-- TODO: Replace idPLACEHOLDER with your real App Store ID -->
+            <a href="https://apps.apple.com/app/idPLACEHOLDER" class="app-store-badge" aria-label="Download Woodshed on the App Store">
+                <svg viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/>
+                </svg>
+                <span class="label">
+                    <span class="small">Download on the</span>
+                    <span class="big">App Store</span>
+                </span>
+            </a>
+        </div>
+    </div>
+
+    <div class="screenshots">
+        <img src="assets/screenshots/01_library.jpg" alt="Woodshed library showing a grid of recorded tunes" loading="lazy">
+        <img src="assets/screenshots/02_player.jpg" alt="Woodshed tune detail showing player name and instrument" loading="lazy">
+        <img src="assets/screenshots/03_loops.jpg" alt="Woodshed player with A/B/C loop sections and variable speed" loading="lazy">
+    </div>
+
+    <div class="content">
+        <div class="features">
+            <h2>What it does</h2>
+            <div class="feature-grid">
+                <div class="feature">
+                    <div class="feature-head">
+                        <div class="feature-icon amber" aria-hidden="true">🎬</div>
+                        <strong>Record at Jams</strong>
+                    </div>
+                    <p>That lick somebody showed you in the parking lot. The break during a workshop. Whatever you want to remember &mdash; pull out your phone and catch it.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-head">
+                        <div class="feature-icon bark" aria-hidden="true">🏷</div>
+                        <strong>Tag What Matters</strong>
+                    </div>
+                    <p>Tune name, player, who they learned it from, instrument, where you recorded it, and notes. Everything you&rsquo;d want to know six months later.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-head">
+                        <div class="feature-icon warm" aria-hidden="true">🔍</div>
+                        <strong>Search Your Library</strong>
+                    </div>
+                    <p>Search by tune, player, or instrument. Your recordings stay organized so you can find them without scrolling through hundreds of clips.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-head">
+                        <div class="feature-icon amber" aria-hidden="true">🐢</div>
+                        <strong>Slow It Down</strong>
+                    </div>
+                    <p>Variable playback speed without changing pitch. Half speed, three-quarter speed &mdash; catch every note of the tricky bit without it going wobbly.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-head">
+                        <div class="feature-icon bark" aria-hidden="true">🔁</div>
+                        <strong>Loop the Hard Parts</strong>
+                    </div>
+                    <p>Mark A, B, and C parts. Set loop points anywhere and let it run until you&rsquo;ve got it under your fingers. Go woodshed.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-head">
+                        <div class="feature-icon warm" aria-hidden="true">📍</div>
+                        <strong>Chapter Marks</strong>
+                    </div>
+                    <p>Drop a marker at any moment &mdash; the turnaround, the hard measure, the full-speed run-through. Jump back to exactly that spot every time.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mid-cta">
+            <!-- TODO: Replace idPLACEHOLDER with your real App Store ID -->
+            <a href="https://apps.apple.com/app/idPLACEHOLDER" class="app-store-badge" aria-label="Download Woodshed on the App Store">
+                <svg viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/>
+                </svg>
+                <span class="label">
+                    <span class="small">Download on the</span>
+                    <span class="big">App Store</span>
+                </span>
+            </a>
+        </div>
+
+        <div class="links">
+            <a href="support.html">Support</a>
+            <a href="privacy.html">Privacy Policy</a>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 Sara Russert. All rights reserved.
+    </footer>
+
+    <script>
+        (function() {
+            var banner = document.getElementById('installBanner');
+            var closeBtn = document.getElementById('installBannerClose');
+            if (!banner || !closeBtn) return;
+
+            // TODO: Remove this early return once the App Store link is live
+            return;
+
+            var DISMISSED_KEY = 'woodshed_install_banner_dismissed';
+            var ua = navigator.userAgent;
+            var isMobile = /Mobi|Android|iPhone|iPad|iPod/i.test(ua) || window.innerWidth < 768;
+            var isIOS = /iPad|iPhone|iPod/.test(ua);
+            var isSafari = /^((?!chrome|android|crios|fxios|edgios).)*safari/i.test(ua);
+            var nativeBannerWillShow = isIOS && isSafari;
+            var dismissed = false;
+            try { dismissed = window.localStorage.getItem(DISMISSED_KEY) === '1'; } catch (e) {}
+
+            if (isMobile && !nativeBannerWillShow && !dismissed) {
+                banner.classList.add('visible');
+            }
+            closeBtn.addEventListener('click', function() {
+                banner.classList.remove('visible');
+                try { window.localStorage.setItem(DISMISSED_KEY, '1'); } catch (e) {}
+            });
+        })();
+    </script>
+</body>
+</html>
