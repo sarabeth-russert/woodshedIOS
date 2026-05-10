@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sararussert.github.io/woodshed/sitemap.xml
+Sitemap: https://sararussert.github.io/woodshedIOS/sitemap.xml

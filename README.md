@@ -2,7 +2,7 @@
 
 Marketing and support site for the Woodshed iOS app — a tune recorder for old time and bluegrass musicians.
 
-Hosted on GitHub Pages at **https://sararussert.github.io/woodshed/**
+Hosted on GitHub Pages at **https://sararussert.github.io/woodshedIOS/**
 
 ## Pages
 
