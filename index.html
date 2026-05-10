@@ -3,28 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta name="theme-color" content="#F5EDD9" media="(prefers-color-scheme: light)">
-    <meta name="theme-color" content="#1C1007" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#261105">
     <title>Woodshed — Record Tunes at Jams &amp; Festivals (iPhone)</title>
     <meta name="description" content="Never lose a tune you learned. Record players at festivals and workshops, tag the tune and instrument, slow it down, loop the hard parts, and build your own searchable library.">
     <meta name="keywords" content="woodshed app, old time music app, bluegrass app, folk music recorder, slow down music app, tune learning app, jam session recorder, traditional music, banjo, fiddle, guitar, mandolin">
     <meta name="author" content="Sara Russert">
 
-    <!-- TODO: Uncomment and add App Store ID when the app is live -->
+    <!-- TODO: Uncomment when App Store ID is available -->
     <!-- <meta name="apple-itunes-app" content="app-id=XXXXXXXXXX"> -->
 
     <link rel="icon" type="image/png" sizes="128x128" href="assets/favicon-128.png">
     <link rel="apple-touch-icon" href="assets/app-icon-256.png">
     <link rel="stylesheet" href="assets/site.css">
 
-    <!-- Social sharing -->
     <meta property="og:title" content="Woodshed — Record Tunes at Jams &amp; Festivals">
     <meta property="og:description" content="Never lose a tune you learned. Record players at festivals and workshops, slow it down, loop the hard parts, and build your searchable tune library.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://sarabeth-russert.github.io/woodshedIOS/">
     <meta property="og:image" content="https://sarabeth-russert.github.io/woodshedIOS/assets/screenshots/02_player.jpg">
     <meta property="og:site_name" content="Woodshed">
-    <meta property="og:locale" content="en_US">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Woodshed — Never Lose a Tune You Learned">
     <meta name="twitter:description" content="Record anyone playing at jams and festivals. Tag it, slow it down, loop the tricky parts.">
@@ -40,19 +37,12 @@
       "applicationCategory": "MusicApplication",
       "operatingSystem": "iOS 17.0",
       "url": "https://sarabeth-russert.github.io/woodshedIOS/",
-      "author": { "@type": "Person", "name": "Sara Russert" },
-      "featureList": [
-        "Record video at festivals, workshops, and jams",
-        "Tag recordings with tune name, player, instrument, and notes",
-        "Searchable library",
-        "Variable playback speed without pitch change",
-        "A/B/C section looping",
-        "Chapter marks and jump points"
-      ]
+      "author": { "@type": "Person", "name": "Sara Russert" }
     }
     </script>
 </head>
 <body>
+
     <!-- Mobile install banner — enable when App Store ID is ready -->
     <div class="install-banner" id="installBanner" role="banner">
         <button class="close" id="installBannerClose" aria-label="Dismiss">&times;</button>
@@ -65,102 +55,113 @@
         <a class="get" href="https://apps.apple.com/app/idPLACEHOLDER">Get</a>
     </div>
 
-    <div class="hero">
-        <div class="hero-inner">
-            <img class="hero-icon" src="assets/app-icon.png" alt="Woodshed app icon">
+    <!-- ===== Feature showcase ===== -->
+    <section class="showcase" aria-label="Woodshed features">
 
-            <h1>Woodshed</h1>
-            <div class="tagline">Don&rsquo;t lose the good stuff.</div>
-            <div class="subtitle">Record anyone playing at festivals, workshops, and jams. Tag the tune, the player, and the instrument. Slow it down, loop the hard parts, and build your own searchable library.</div>
-
-            <div class="pills" aria-label="Instruments">
-                <span class="pill">Banjo</span>
-                <span class="pill">Fiddle</span>
-                <span class="pill">Guitar</span>
-                <span class="pill">Mandolin</span>
-                <span class="pill">Dulcimer</span>
+        <article class="panel panel-dark">
+            <div class="panel-text">
+                <h1>Don&rsquo;t lose<br>the good stuff.</h1>
+                <p class="panel-desc">Your library for tunes, lessons, and workshop demos.</p>
             </div>
+            <img class="screen" src="assets/screenshots/01_library.jpg"
+                 alt="Woodshed library showing a grid of recorded tunes from festivals and jams"
+                 loading="eager">
+        </article>
 
-            <!-- TODO: Replace idPLACEHOLDER with your real App Store ID -->
-            <a href="https://apps.apple.com/app/idPLACEHOLDER" class="app-store-badge" aria-label="Download Woodshed on the App Store">
-                <svg viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                    <path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/>
-                </svg>
-                <span class="label">
-                    <span class="small">Download on the</span>
-                    <span class="big">App Store</span>
-                </span>
-            </a>
-        </div>
-    </div>
+        <article class="panel panel-light">
+            <div class="panel-text">
+                <h2>Capture it<br>while it&rsquo;s fresh.</h2>
+                <p class="panel-desc">Record tunes, lessons, or jams in the moment.</p>
+            </div>
+            <img class="screen" src="assets/screenshots/02_player.jpg"
+                 alt="Woodshed tune detail showing player name, instrument, and who they learned it from"
+                 loading="lazy">
+        </article>
 
-    <div class="screenshots">
-        <img src="assets/screenshots/01_library.jpg" alt="Woodshed library showing a grid of recorded tunes" loading="lazy">
-        <img src="assets/screenshots/02_player.jpg" alt="Woodshed tune detail showing player name and instrument" loading="lazy">
-        <img src="assets/screenshots/03_loops.jpg" alt="Woodshed player with A/B/C loop sections and variable speed" loading="lazy">
-    </div>
+        <article class="panel panel-light">
+            <div class="panel-text">
+                <h2>Keep the story<br>with it.</h2>
+                <p class="panel-desc">Add the details that matter so you&rsquo;ll remember.</p>
+            </div>
+            <img class="screen" src="assets/screenshots/01_library.jpg"
+                 alt="Woodshed searchable library"
+                 loading="lazy">
+        </article>
 
-    <div class="content">
-        <div class="features">
-            <h2>What it does</h2>
-            <div class="feature-grid">
-                <div class="feature">
-                    <div class="feature-head">
-                        <div class="feature-icon amber" aria-hidden="true">🎬</div>
-                        <strong>Record at Jams</strong>
-                    </div>
-                    <p>That lick somebody showed you in the parking lot. The break during a workshop. Whatever you want to remember &mdash; pull out your phone and catch it.</p>
-                </div>
-                <div class="feature">
-                    <div class="feature-head">
-                        <div class="feature-icon bark" aria-hidden="true">🏷</div>
-                        <strong>Tag What Matters</strong>
-                    </div>
-                    <p>Tune name, player, who they learned it from, instrument, where you recorded it, and notes. Everything you&rsquo;d want to know six months later.</p>
-                </div>
-                <div class="feature">
-                    <div class="feature-head">
-                        <div class="feature-icon warm" aria-hidden="true">🔍</div>
-                        <strong>Search Your Library</strong>
-                    </div>
-                    <p>Search by tune, player, or instrument. Your recordings stay organized so you can find them without scrolling through hundreds of clips.</p>
-                </div>
-                <div class="feature">
-                    <div class="feature-head">
-                        <div class="feature-icon amber" aria-hidden="true">🐢</div>
-                        <strong>Slow It Down</strong>
-                    </div>
-                    <p>Variable playback speed without changing pitch. Half speed, three-quarter speed &mdash; catch every note of the tricky bit without it going wobbly.</p>
-                </div>
-                <div class="feature">
-                    <div class="feature-head">
-                        <div class="feature-icon bark" aria-hidden="true">🔁</div>
-                        <strong>Loop the Hard Parts</strong>
-                    </div>
-                    <p>Mark A, B, and C parts. Set loop points anywhere and let it run until you&rsquo;ve got it under your fingers. Go woodshed.</p>
-                </div>
-                <div class="feature">
-                    <div class="feature-head">
-                        <div class="feature-icon warm" aria-hidden="true">📍</div>
-                        <strong>Chapter Marks</strong>
-                    </div>
-                    <p>Drop a marker at any moment &mdash; the turnaround, the hard measure, the full-speed run-through. Jump back to exactly that spot every time.</p>
-                </div>
+        <article class="panel panel-light">
+            <div class="panel-text">
+                <h2>Go<br>woodshed.</h2>
+                <p class="panel-desc">Slow it down, loop tricky parts, and practice your way.</p>
+            </div>
+            <img class="screen" src="assets/screenshots/03_loops.jpg"
+                 alt="Woodshed player with A/B/C loop sections and variable speed controls"
+                 loading="lazy">
+        </article>
+
+    </section>
+
+    <!-- ===== Brand bar ===== -->
+    <div class="brand-bar">
+        <div class="brand-left">
+            <img class="brand-icon" src="assets/app-icon-256.png" alt="Woodshed">
+            <div class="brand-name">
+                <span class="brand-title">Woodshed</span>
+                <span class="brand-tagline">Tune Library. <strong>Record. Remember. Practice.</strong></span>
             </div>
         </div>
 
-        <div class="mid-cta">
-            <!-- TODO: Replace idPLACEHOLDER with your real App Store ID -->
-            <a href="https://apps.apple.com/app/idPLACEHOLDER" class="app-store-badge" aria-label="Download Woodshed on the App Store">
-                <svg viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                    <path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/>
+        <div class="brand-divider" aria-hidden="true"></div>
+
+        <div class="brand-features">
+            <div class="brand-feature">
+                <!-- Video camera -->
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="2" y="7" width="13" height="10" rx="2"/>
+                    <path d="M15 10.5l6-3.5v10l-6-3.5"/>
                 </svg>
-                <span class="label">
-                    <span class="small">Download on the</span>
-                    <span class="big">App Store</span>
-                </span>
-            </a>
+                <span>Record</span>
+            </div>
+            <div class="brand-feature">
+                <!-- Tag -->
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/>
+                    <circle cx="7" cy="7" r="1" fill="currentColor" stroke="none"/>
+                </svg>
+                <span>Organize</span>
+            </div>
+            <div class="brand-feature">
+                <!-- Search -->
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="11" cy="11" r="8"/>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                </svg>
+                <span>Find</span>
+            </div>
+            <div class="brand-feature">
+                <!-- Loop / repeat -->
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <polyline points="17 1 21 5 17 9"/>
+                    <path d="M3 11V9a4 4 0 0 1 4-4h14"/>
+                    <polyline points="7 23 3 19 7 15"/>
+                    <path d="M21 13v2a4 4 0 0 1-4 4H3"/>
+                </svg>
+                <span>Practice</span>
+            </div>
         </div>
+    </div>
+
+    <!-- ===== App Store CTA ===== -->
+    <div class="cta-section">
+        <!-- TODO: Replace idPLACEHOLDER with your real App Store ID -->
+        <a href="https://apps.apple.com/app/idPLACEHOLDER" class="app-store-badge" aria-label="Download Woodshed on the App Store">
+            <svg viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/>
+            </svg>
+            <span class="label">
+                <span class="small">Download on the</span>
+                <span class="big">App Store</span>
+            </span>
+        </a>
 
         <div class="links">
             <a href="support.html">Support</a>
@@ -189,7 +190,6 @@
             var nativeBannerWillShow = isIOS && isSafari;
             var dismissed = false;
             try { dismissed = window.localStorage.getItem(DISMISSED_KEY) === '1'; } catch (e) {}
-
             if (isMobile && !nativeBannerWillShow && !dismissed) {
                 banner.classList.add('visible');
             }
@@ -199,5 +199,6 @@
             });
         })();
     </script>
+
 </body>
 </html>
