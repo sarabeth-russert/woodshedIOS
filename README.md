@@ -2,7 +2,7 @@
 
 Marketing and support site for the Woodshed iOS app — a tune recorder for old time and bluegrass musicians.
 
-Hosted on GitHub Pages at **https://sararussert.github.io/woodshedIOS/**
+Hosted on GitHub Pages at **https://sarabeth-russert.github.io/woodshedIOS/**
 
 ## Pages
 
@@ -29,7 +29,7 @@ Add a `CNAME` file in the root of this repo containing your domain, e.g.:
 woodshed.yourdomain.com
 ```
 
-Then configure your DNS to point that subdomain to `sararussert.github.io`.
+Then configure your DNS to point that subdomain to `sarabeth-russert.github.io`.
 
 ## Assets
 
