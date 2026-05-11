@@ -230,7 +230,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    justify-content: center;
+    justify-content: space-between;
     gap: 0.9rem;
 }
 .brand-features {
