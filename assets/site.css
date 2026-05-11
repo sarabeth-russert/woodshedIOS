@@ -90,7 +90,7 @@ body {
     flex: 1;
     display: flex;
     flex-direction: column;
-    padding: clamp(1.4rem, 3vw, 2.2rem) clamp(0.9rem, 2vw, 1.5rem) clamp(1.2rem, 2.5vw, 2rem);
+    padding: clamp(1.13rem, 2.43vw, 1.78rem) clamp(0.73rem, 1.62vw, 1.22rem) clamp(0.97rem, 2.03vw, 1.62rem);
 }
 .panel-dark {
     background: var(--dark-panel);
@@ -98,7 +98,6 @@ body {
 .panel-light {
     background: var(--paper);
     border-left: 1px solid rgba(56, 31, 13, 0.12);
-    padding: clamp(1.26rem, 2.7vw, 1.98rem) clamp(0.81rem, 1.8vw, 1.35rem) clamp(1.08rem, 2.25vw, 1.8rem);
 }
 .panel h1 {
     font-size: clamp(1.08rem, 1.8vw, 1.9rem);
@@ -181,9 +180,42 @@ body {
 .brand-bar {
     background: var(--dark-panel);
     display: flex;
+    flex-direction: column;
+}
+.brand-main {
+    display: flex;
     align-items: center;
     padding: clamp(1.2rem, 2.5vw, 1.8rem) clamp(1.2rem, 3vw, 2.5rem);
     gap: clamp(1.5rem, 3vw, 2.5rem);
+}
+.brand-cta {
+    text-align: center;
+    padding: clamp(1.2rem, 2.5vw, 1.8rem) 1rem clamp(1.4rem, 2.5vw, 2rem);
+    border-top: 1px solid rgba(245, 237, 217, 0.1);
+}
+.brand-cta .app-store-badge {
+    background: rgba(245, 237, 217, 0.1);
+    border: 1px solid rgba(245, 237, 217, 0.22);
+    color: var(--paper);
+    box-shadow: none;
+}
+.brand-cta .app-store-badge:hover {
+    background: rgba(245, 237, 217, 0.18);
+    box-shadow: none;
+}
+.brand-links {
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+.brand-links a {
+    color: rgba(245, 237, 217, 0.45);
+    text-decoration: none;
+    margin: 0 0.8rem;
+}
+.brand-links a:hover {
+    color: var(--amber);
+    text-decoration: underline;
 }
 .brand-left {
     display: flex;
@@ -257,13 +289,6 @@ body {
     stroke-width: 1.75;
     stroke-linecap: round;
     stroke-linejoin: round;
-}
-
-/* ---------- CTA section (support/privacy links) ---------- */
-.cta-section {
-    background: var(--paper);
-    text-align: center;
-    padding: clamp(1.5rem, 3vw, 2rem) 1rem;
 }
 
 /* ---------- App Store badge ---------- */
@@ -362,7 +387,7 @@ footer {
         bottom: 10px;
         height: 3px;
     }
-    .brand-bar { flex-wrap: wrap; }
+    .brand-main { flex-wrap: wrap; }
     .brand-divider { display: none; }
     .brand-features { justify-content: flex-start; flex: 0 0 100%; }
 }
