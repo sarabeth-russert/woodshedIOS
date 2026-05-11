@@ -225,12 +225,30 @@ body {
     flex-shrink: 0;
     margin: 0.25rem 0;
 }
-.brand-features {
+.brand-right {
     flex: 1;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: clamp(1.5rem, 4vw, 3.5rem);
+    justify-content: flex-end;
+    gap: clamp(2rem, 4vw, 3.5rem);
+}
+.brand-features {
+    display: flex;
+    align-items: center;
+    gap: clamp(1.5rem, 3vw, 2.5rem);
+}
+/* App Store badge styled for the dark brand bar */
+.brand-bar .app-store-badge {
+    background: rgba(245, 237, 217, 0.10);
+    border: 1px solid rgba(245, 237, 217, 0.22);
+    box-shadow: none;
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+.brand-bar .app-store-badge:hover {
+    background: rgba(245, 237, 217, 0.18);
+    box-shadow: none;
+    transform: translateY(-2px);
 }
 .brand-feature {
     display: flex;
@@ -253,11 +271,11 @@ body {
     stroke-linejoin: round;
 }
 
-/* ---------- CTA section ---------- */
+/* ---------- CTA section (support/privacy links) ---------- */
 .cta-section {
     background: var(--paper);
     text-align: center;
-    padding: clamp(2.5rem, 6vw, 4rem) 1rem clamp(1.5rem, 4vw, 2.5rem);
+    padding: clamp(1.5rem, 3vw, 2rem) 1rem;
 }
 
 /* ---------- App Store badge ---------- */
