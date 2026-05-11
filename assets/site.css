@@ -91,7 +91,6 @@ body {
     display: flex;
     flex-direction: column;
     padding: clamp(1.4rem, 3vw, 2.2rem) clamp(0.9rem, 2vw, 1.5rem) 0;
-    overflow: hidden;
 }
 .panel-dark {
     background: var(--dark-panel);
@@ -128,23 +127,27 @@ body {
 .phone-wrap {
     align-self: center;
     margin-top: auto;
-    width: 82%;
-    max-width: 200px;
+    flex-shrink: 0;
     position: relative;
+    width: 72%;
+    max-width: 168px;
     background: #1C1C1E;
-    border-radius: 46px;
+    border-radius: 44px;
     padding: 14px 6px 12px;
     box-shadow:
-        inset 0 0 0 1px rgba(255, 255, 255, 0.10),
-        0 0 0 1.5px #3a3a3c,
-        0 32px 80px rgba(0, 0, 0, 0.55),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.12),
+        0 0 0 2px #3a3a3c,
+        0 28px 72px rgba(0, 0, 0, 0.55),
         0 8px 24px rgba(0, 0, 0, 0.30);
 }
 .phone-wrap img {
     display: block;
     width: 100%;
-    height: auto;
-    border-radius: 34px;
+    /* Show top portion of screenshot only */
+    height: 300px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 32px;
 }
 /* Dynamic Island */
 .phone-wrap::before {
@@ -153,10 +156,10 @@ body {
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
-    width: 80px;
-    height: 26px;
+    width: 72px;
+    height: 24px;
     background: #1C1C1E;
-    border-radius: 13px;
+    border-radius: 12px;
     z-index: 2;
     pointer-events: none;
 }
@@ -333,22 +336,21 @@ footer {
     .panel .phone-wrap {
         width: auto;
         max-width: none;
+        flex-shrink: 0;
         margin: 0;
-        border-radius: 28px;
+        border-radius: 26px;
         padding: 9px 4px 8px;
     }
     .panel .phone-wrap img {
-        height: 130px;
         width: auto;
-        object-fit: cover;
-        object-position: top;
-        border-radius: 22px;
+        height: 120px;
+        border-radius: 20px;
     }
     .panel .phone-wrap::before {
-        width: 52px;
-        height: 17px;
+        width: 46px;
+        height: 16px;
         top: 13px;
-        border-radius: 9px;
+        border-radius: 8px;
     }
     .panel .phone-wrap::after {
         bottom: 10px;
