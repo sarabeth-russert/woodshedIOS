@@ -237,20 +237,6 @@ body {
     align-items: center;
     gap: clamp(1.5rem, 3vw, 2.5rem);
 }
-/* App Store badge styled for the dark brand bar */
-.brand-bar .app-store-badge {
-    background: rgba(245, 237, 217, 0.10);
-    border: 1px solid rgba(245, 237, 217, 0.22);
-    box-shadow: none;
-    flex-shrink: 0;
-    white-space: nowrap;
-    align-self: center;
-}
-.brand-bar .app-store-badge:hover {
-    background: rgba(245, 237, 217, 0.18);
-    box-shadow: none;
-    transform: translateY(-2px);
-}
 .brand-feature {
     display: flex;
     flex-direction: column;
