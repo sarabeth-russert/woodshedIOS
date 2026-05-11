@@ -250,11 +250,7 @@ body {
     font-weight: 600;
 }
 .brand-divider {
-    width: 1px;
-    align-self: stretch;
-    background: rgba(245, 237, 217, 0.15);
-    flex-shrink: 0;
-    margin: 0.25rem 0;
+    display: none;
 }
 .brand-right {
     flex: 1;
