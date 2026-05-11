@@ -116,7 +116,7 @@ body {
     margin-bottom: 0.5rem;
 }
 .panel-desc {
-    font-size: clamp(0.88rem, 1.25vw, 1.05rem);
+    font-size: clamp(0.97rem, 1.38vw, 1.16rem);
     line-height: 1.5;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
