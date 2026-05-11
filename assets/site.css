@@ -124,15 +124,54 @@ body {
 }
 .panel-dark .panel-desc  { color: rgba(245, 237, 217, 0.70); }
 .panel-light .panel-desc { color: var(--ink-soft); }
-.panel .screen {
-    display: block;
+/* ---------- Phone frame mockup ---------- */
+.phone-wrap {
     align-self: center;
     margin-top: auto;
     width: 82%;
     max-width: 200px;
+    position: relative;
+    background: #1C1C1E;
+    border-radius: 46px;
+    padding: 14px 6px 12px;
+    box-shadow:
+        inset 0 0 0 1px rgba(255, 255, 255, 0.10),
+        0 0 0 1.5px #3a3a3c,
+        0 32px 80px rgba(0, 0, 0, 0.55),
+        0 8px 24px rgba(0, 0, 0, 0.30);
+}
+.phone-wrap img {
+    display: block;
+    width: 100%;
     height: auto;
-    border-radius: clamp(14px, 2.2vw, 22px);
-    box-shadow: 0 24px 64px rgba(0, 0, 0, 0.38), 0 0 0 1px rgba(255,255,255,0.08);
+    border-radius: 34px;
+}
+/* Dynamic Island */
+.phone-wrap::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 26px;
+    background: #1C1C1E;
+    border-radius: 13px;
+    z-index: 2;
+    pointer-events: none;
+}
+/* Home indicator */
+.phone-wrap::after {
+    content: '';
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 32%;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.28);
+    border-radius: 2px;
+    pointer-events: none;
 }
 
 /* ---------- Brand bar ---------- */
@@ -291,14 +330,29 @@ footer {
     .panel-light { border-top: 1px solid rgba(56, 31, 13, 0.1); }
     .panel h1, .panel h2 { font-size: clamp(1.25rem, 5vw, 1.55rem); }
     .panel-text { flex: 1; }
-    .panel .screen {
+    .panel .phone-wrap {
         width: auto;
-        height: 140px;
         max-width: none;
-        border-radius: 12px;
         margin: 0;
+        border-radius: 28px;
+        padding: 9px 4px 8px;
+    }
+    .panel .phone-wrap img {
+        height: 130px;
+        width: auto;
         object-fit: cover;
         object-position: top;
+        border-radius: 22px;
+    }
+    .panel .phone-wrap::before {
+        width: 52px;
+        height: 17px;
+        top: 13px;
+        border-radius: 9px;
+    }
+    .panel .phone-wrap::after {
+        bottom: 10px;
+        height: 3px;
     }
     .brand-bar { flex-wrap: wrap; }
     .brand-divider { display: none; }
