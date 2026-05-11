@@ -363,23 +363,23 @@ footer {
         max-width: none;
         flex-shrink: 0;
         margin: 0;
-        border-radius: 26px;
-        padding: 9px 4px 8px;
+        border-radius: 18px;
+        padding: 6px 3px 5px;
     }
     .panel .phone-wrap img {
         width: 100%;
         height: auto;
-        border-radius: 20px;
+        border-radius: 14px;
     }
     .panel .phone-wrap::before {
-        width: 46px;
-        height: 16px;
-        top: 13px;
-        border-radius: 8px;
+        width: 32px;
+        height: 11px;
+        top: 9px;
+        border-radius: 6px;
     }
     .panel .phone-wrap::after {
-        bottom: 10px;
-        height: 3px;
+        bottom: 7px;
+        height: 2px;
     }
     .brand-main { grid-template-columns: 1fr; justify-items: center; }
     .brand-left { width: 100%; justify-content: center; }
