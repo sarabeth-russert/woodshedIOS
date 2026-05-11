@@ -359,7 +359,7 @@ footer {
     .panel h1, .panel h2 { font-size: clamp(1.25rem, 5vw, 1.55rem); }
     .panel-text { flex: 1; }
     .panel .phone-wrap {
-        width: auto;
+        width: 68px;
         max-width: none;
         flex-shrink: 0;
         margin: 0;
@@ -367,8 +367,8 @@ footer {
         padding: 9px 4px 8px;
     }
     .panel .phone-wrap img {
-        width: auto;
-        height: 120px;
+        width: 100%;
+        height: auto;
         border-radius: 20px;
     }
     .panel .phone-wrap::before {
