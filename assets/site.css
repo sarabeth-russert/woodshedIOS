@@ -132,7 +132,7 @@ body {
     width: 72%;
     max-width: 168px;
     background: #1C1C1E;
-    border-radius: 44px;
+    border-radius: 32px;
     padding: 14px 6px 12px;
     box-shadow:
         inset 0 0 0 1px rgba(255, 255, 255, 0.12),
@@ -147,7 +147,7 @@ body {
     height: 420px;
     object-fit: cover;
     object-position: top;
-    border-radius: 32px;
+    border-radius: 22px;
 }
 /* Dynamic Island */
 .phone-wrap::before {
