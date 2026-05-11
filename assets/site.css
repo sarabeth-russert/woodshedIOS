@@ -471,6 +471,9 @@ details summary::after {
 details[open] summary::after { content: "\2212"; }
 details[open] { background: var(--tint-bg); border-color: rgba(204, 140, 51, 0.25); }
 details p { margin-top: 0.7rem; color: var(--ink-soft); font-size: 0.95rem; line-height: 1.6; }
+.nested-details { display: flex; flex-direction: column; gap: 0.4rem; margin-top: 0.75rem; }
+.nested-details details { background: rgba(56, 31, 13, 0.05); border-color: rgba(56, 31, 13, 0.08); }
+.nested-details details[open] { background: rgba(204, 140, 51, 0.08); }
 details ul { margin-top: 0.7rem; padding-left: 1.3rem; color: var(--ink-soft); font-size: 0.95rem; }
 details li { margin-bottom: 0.3rem; }
 
