@@ -34,7 +34,7 @@ html { -webkit-text-size-adjust: 100%; }
 body {
     font-family: Georgia, "Times New Roman", Times, serif;
     color: var(--ink);
-    background: var(--paper);
+    background: var(--dark-panel);
     -webkit-font-smoothing: antialiased;
     min-height: 100dvh;
 }
