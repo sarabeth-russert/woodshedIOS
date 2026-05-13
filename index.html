@@ -1,246 +1,364 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <meta name="theme-color" content="#261105" />
-    <title>Woodshed — Record Tunes at Jams &amp; Festivals (iPhone)</title>
-    <meta
-      name="description"
-      content="Never lose a tune you learned. Record players at festivals and workshops, tag the tune and instrument, slow it down, loop the hard parts, and build your own searchable library."
-    />
-    <meta
-      name="keywords"
-      content="woodshed app, old time music app, bluegrass app, folk music recorder, slow down music app, tune learning app, jam session recorder, traditional music, banjo, fiddle, guitar, mandolin"
-    />
+    <title>Woodshed — Record Tunes at Jams &amp; Festivals</title>
+    <meta name="description" content="Never lose a tune you learned. Record players at festivals and workshops, tag the tune and instrument, slow it down, loop the hard parts, and build your own searchable library." />
+    <meta name="keywords" content="woodshed app, old time music app, bluegrass app, folk music recorder, slow down music app, tune learning app, jam session recorder, traditional music, banjo, fiddle, guitar, mandolin" />
     <meta name="author" content="Sara Russert" />
 
     <meta name="apple-itunes-app" content="app-id=6768061433">
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="128x128"
-      href="assets/favicon-128.png"
-    />
+    <link rel="icon" type="image/png" sizes="128x128" href="assets/favicon-128.png" />
     <link rel="apple-touch-icon" href="assets/app-icon-256.png" />
     <link rel="stylesheet" href="assets/site.css" />
 
-    <meta
-      property="og:title"
-      content="Woodshed — Record Tunes at Jams &amp; Festivals"
-    />
-    <meta
-      property="og:description"
-      content="Never lose a tune you learned. Record players at festivals and workshops, slow it down, loop the hard parts, and build your searchable tune library."
-    />
+    <meta property="og:title" content="Woodshed — Record Tunes at Jams &amp; Festivals" />
+    <meta property="og:description" content="Never lose a tune you learned. Record players at festivals and workshops, slow it down, loop the hard parts, and build your searchable tune library." />
     <meta property="og:type" content="website" />
-    <meta
-      property="og:url"
-      content="https://sarabeth-russert.github.io/woodshedIOS/"
-    />
-    <meta
-      property="og:image"
-      content="https://sarabeth-russert.github.io/woodshedIOS/assets/poster.png"
-    />
+    <meta property="og:url" content="https://sarabeth-russert.github.io/woodshedIOS/" />
+    <meta property="og:image" content="https://sarabeth-russert.github.io/woodshedIOS/assets/poster.png" />
     <meta property="og:site_name" content="Woodshed" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:title"
-      content="Woodshed — Never Lose a Tune You Learned"
-    />
-    <meta
-      name="twitter:description"
-      content="Record anyone playing at jams and festivals. Tag it, slow it down, loop the tricky parts."
-    />
-    <meta
-      name="twitter:image"
-      content="https://sarabeth-russert.github.io/woodshedIOS/assets/poster.png"
-    />
-    <link
-      rel="canonical"
-      href="https://sarabeth-russert.github.io/woodshedIOS/"
-    />
+    <meta name="twitter:title" content="Woodshed — Never Lose a Tune You Learned" />
+    <meta name="twitter:description" content="Record anyone playing at jams and festivals. Tag it, slow it down, loop the tricky parts." />
+    <meta name="twitter:image" content="https://sarabeth-russert.github.io/woodshedIOS/assets/poster.png" />
+    <link rel="canonical" href="https://sarabeth-russert.github.io/woodshedIOS/" />
 
     <script type="application/ld+json">
-      {
+    {
         "@context": "https://schema.org",
         "@type": "MobileApplication",
         "name": "Woodshed",
         "description": "Record players at festivals, workshops, and jams. Tag the tune, player, and instrument. Slow it down without changing pitch. Loop sections. Build a searchable library of everything you've learned.",
         "applicationCategory": "MusicApplication",
-        "operatingSystem": "iOS 17.0",
+        "operatingSystem": "iOS 17.0, macOS 14.0",
         "url": "https://sarabeth-russert.github.io/woodshedIOS/",
         "author": { "@type": "Person", "name": "Sara Russert" }
-      }
+    }
     </script>
-  </head>
-  <body>
-    <!-- Mobile install banner — enable when App Store ID is ready -->
+</head>
+<body>
+
+    <!-- Mobile install banner -->
     <div class="install-banner" id="installBanner" role="banner">
-      <button class="close" id="installBannerClose" aria-label="Dismiss">
-        &times;
-      </button>
-      <img class="icon" src="assets/app-icon-256.png" alt="" />
-      <div class="info">
-        <strong>Woodshed</strong>
-        <span>Free on the App Store &mdash; iPhone</span>
-      </div>
-      <!-- TODO: Replace href with real App Store link -->
-      <a class="get" href="https://apps.apple.com/app/id6768061433">Get</a>
+        <button class="close" id="installBannerClose" aria-label="Dismiss">&times;</button>
+        <img class="icon" src="assets/app-icon-256.png" alt="" />
+        <div class="info">
+            <strong>Woodshed</strong>
+            <span>Free on the App Store &mdash; iPhone, iPad &amp; Mac</span>
+        </div>
+        <a class="get" href="https://apps.apple.com/app/id6768061433">Get</a>
     </div>
 
-    <!-- ===== Feature showcase ===== -->
-    <section class="showcase" aria-label="Woodshed features">
-      <article class="panel panel-dark">
-        <div class="panel-text">
-          <h1>Don&rsquo;t lose the good stuff.</h1>
+    <!-- ===== Nav ===== -->
+    <nav class="site-nav">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">
+                <img src="assets/app-icon-256.png" alt="Woodshed app icon" />
+                <span>Woodshed</span>
+            </a>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#faq">FAQ</a>
+                <a href="support.html">Support</a>
+                <a href="https://apps.apple.com/app/id6768061433" class="nav-cta">App Store</a>
+            </div>
         </div>
-        <div class="phone-wrap">
-          <img
-            src="assets/screenshots/01_library.jpg"
-            alt="Woodshed library showing a grid of recorded tunes from festivals and jams"
-            loading="eager"
-          />
-        </div>
-      </article>
+    </nav>
 
-      <article class="panel panel-light">
-        <div class="panel-text">
-          <h2>Capture it while it&rsquo;s fresh.</h2>
-          <p class="panel-desc">
-            Record tunes, lessons, or jams in the moment.
-          </p>
+    <!-- ===== 1. Hero ===== -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Don&rsquo;t lose the good stuff.</h1>
+            <p class="hero-tagline">Built for musicians who learn by ear.</p>
+            <p class="hero-sub">
+                That tune from the workshop.<br>
+                That lick from the parking lot jam.<br>
+                That version you swore you&rsquo;d remember.
+            </p>
+            <p class="hero-body">Capture tunes in the moment. Come back when you&rsquo;re ready to woodshed.</p>
+            <div class="hero-cta">
+                <a href="https://apps.apple.com/app/id6768061433" class="app-store-badge" aria-label="Download Woodshed on the App Store">
+                    <svg viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/>
+                    </svg>
+                    <span class="label">
+                        <span class="small">Download on the</span>
+                        <span class="big">App Store</span>
+                    </span>
+                </a>
+                <p class="device-note">Available for iPhone, iPad, and Mac</p>
+            </div>
         </div>
-        <div class="phone-wrap">
-          <img
-            src="assets/screenshots/02_record.png"
-            alt="Woodshed recording screen — point and record"
-            loading="lazy"
-          />
-        </div>
-      </article>
 
-      <article class="panel panel-light">
-        <div class="panel-text">
-          <h2>Keep the story with it.</h2>
-          <p class="panel-desc">Add the details that matter.</p>
-        </div>
-        <div class="phone-wrap">
-          <img
-            src="assets/screenshots/03_add.png"
-            alt="Woodshed add screen — tune name, player, instrument, original artist, learned from"
-            loading="lazy"
-          />
-        </div>
-      </article>
+        <div class="hero-devices">
 
-      <article class="panel panel-light">
-        <div class="panel-text">
-          <h2>Find it without digging.</h2>
-          <p class="panel-desc">Search by tune, player, or instrument.</p>
-        </div>
-        <div class="phone-wrap">
-          <img
-            src="assets/screenshots/04_search.png"
-            alt="Woodshed search screen showing results by tune and player name"
-            loading="lazy"
-          />
-        </div>
-      </article>
+            <!-- MacBook: background anchor, z-index 1 -->
+            <div class="hd-macbook">
+                <div class="hd-mb-lid">
+                    <div class="hd-mb-screen">
+                        <img src="assets/screenshots/macPlayback.png" alt="Woodshed playback on Mac" loading="eager" />
+                    </div>
+                </div>
+                <div class="hd-mb-hinge"></div>
+                <div class="hd-mb-base">
+                    <div class="hd-mb-keys"></div>
+                    <div class="hd-mb-pad"></div>
+                </div>
+            </div>
 
-      <article class="panel panel-light">
-        <div class="panel-text">
-          <h2>Go woodshed.</h2>
-          <p class="panel-desc">Slow it down. Loop it. Practice.</p>
+            <!-- iPad: midground, z-index 2 -->
+            <div class="hd-ipad">
+                <div class="hd-ipad-body">
+                    <div class="hd-ipad-screen">
+                        <img src="assets/screenshots/iPadLibraryGrid.png" alt="Woodshed library on iPad" loading="eager" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- iPhone: foreground focal, z-index 3 -->
+            <div class="hd-iphone">
+                <div class="hd-iphone-body">
+                    <div class="hd-iphone-screen">
+                        <div class="hd-iphone-island"></div>
+                        <img src="assets/screenshots/02_record.png" alt="Woodshed recording on iPhone" loading="eager" />
+                    </div>
+                    <div class="hd-iphone-bar"></div>
+                </div>
+            </div>
+
         </div>
-        <div class="phone-wrap">
-          <img
-            src="assets/screenshots/03_loops.jpg"
-            alt="Woodshed player with A/B/C loop sections and variable speed controls"
-            loading="lazy"
-          />
-        </div>
-      </article>
     </section>
 
-    <!-- ===== Brand bar ===== -->
-    <div class="brand-bar">
-      <div class="brand-main">
-        <div class="brand-left">
-          <img
-            class="brand-icon"
-            src="assets/app-icon-256.png"
-            alt="Woodshed"
-          />
-          <div class="brand-name">
-            <span class="brand-title">Woodshed</span>
-            <span class="brand-tagline"
-              >Tune Library. <strong>Record. Remember. Practice.</strong></span
-            >
-          </div>
+    <!-- ===== 2. Problem section ===== -->
+    <section class="problem-section">
+        <div class="problem-inner">
+            <div class="problem-copy">
+                <h2>If your camera roll looks like this&hellip;</h2>
+                <p>You learned something great.<br>Now six weeks later you have no idea what &ldquo;IMG_4821.mov&rdquo; was.</p>
+            </div>
+            <div class="camera-roll-mock">
+                <img src="assets/camera-roll-mock.jpg" alt="A disorganized camera roll full of unlabeled music videos" loading="lazy" />
+            </div>
         </div>
+    </section>
 
-        <div class="brand-cta">
-          <a
-            href="https://apps.apple.com/app/id6768061433"
-            class="app-store-badge"
-            aria-label="Download Woodshed on the App Store"
-          >
-            <svg
-              viewBox="0 0 384 512"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-            >
-              <path
-                d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"
-              />
-            </svg>
-            <span class="label">
-              <span class="small">Download on the</span>
-              <span class="big">App Store</span>
-            </span>
-          </a>
-          <div class="brand-links">
-            <a href="support.html">Support</a>
-            <a href="privacy.html">Privacy Policy</a>
-          </div>
+    <!-- ===== 3. Metadata section ===== -->
+    <section class="metadata-section" id="features">
+        <div class="metadata-inner">
+            <div class="metadata-device">
+                <div class="device-ipad-frame">
+                    <img src="assets/screenshots/iPadMetadata.png" alt="Woodshed metadata screen showing tune name, player, instrument, and tags" loading="lazy" />
+                </div>
+            </div>
+            <div class="metadata-copy">
+                <h2>Keep the story<br>with the tune.</h2>
+                <p>Woodshed lets you save the details that matter:</p>
+                <ul class="metadata-list">
+                    <li>Tune name</li>
+                    <li>Player</li>
+                    <li>Who they learned it from</li>
+                    <li>Instrument</li>
+                    <li>Tags</li>
+                    <li>Notes</li>
+                </ul>
+                <p class="aside-quote">Because &ldquo;Cluck Old Hen&rdquo; isn&rsquo;t always the same Cluck Old Hen.</p>
+            </div>
         </div>
-      </div>
-    </div>
+    </section>
+
+    <!-- ===== 4. Practice section ===== -->
+    <section class="practice-section">
+        <div class="practice-inner">
+            <div class="practice-copy">
+                <h2>Built for<br>woodshedding.</h2>
+                <ul class="feature-list">
+                    <li>Slow it down without changing pitch</li>
+                    <li>Loop tricky passages</li>
+                    <li>Create labeled practice sections</li>
+                    <li>Drop chapter marks to jump to key moments</li>
+                </ul>
+            </div>
+            <div class="practice-device">
+                <div class="device-mac-screen">
+                    <img src="assets/screenshots/macPlayback.png" alt="Woodshed player on Mac with A/B loop sections, speed controls, and chapter marks" loading="lazy" />
+                </div>
+                <div class="practice-callouts">
+                    <span>Slow without pitch shift</span>
+                    <span>A/B/C loop sections</span>
+                    <span>Chapter marks</span>
+                    <span>Precise desktop controls</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== 5. Cross-device section ===== -->
+    <section class="crossdevice-section">
+        <div class="crossdevice-inner">
+            <h2>Capture at the jam.<br>Practice anywhere.</h2>
+            <p class="cd-body">Record in the moment on your phone. Come back later on iPad or Mac when it&rsquo;s time to really work on it.</p>
+            <p class="cd-sync">Your library syncs automatically across devices with iCloud.</p>
+            <div class="crossdevice-devices">
+                <div class="cd-device cd-iphone">
+                    <div class="phone-wrap">
+                        <img src="assets/screenshots/02_record.png" alt="iPhone recording screen" loading="lazy" />
+                    </div>
+                    <span>Capture</span>
+                </div>
+                <div class="cd-device cd-ipad">
+                    <div class="device-ipad-frame">
+                        <img src="assets/screenshots/iPadLibraryGrid.png" alt="iPad library screen" loading="lazy" />
+                    </div>
+                    <span>Organize</span>
+                </div>
+                <div class="cd-device cd-mac">
+                    <div class="device-mac-screen">
+                        <img src="assets/screenshots/macPlayback.png" alt="Mac playback screen" loading="lazy" />
+                    </div>
+                    <span>Practice</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== 6. Audience section ===== -->
+    <section class="audience-section">
+        <div class="audience-inner">
+            <h2>Built for musicians who learn by ear.</h2>
+            <div class="audience-grid">
+                <div class="audience-card">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M9 18V5l12-2v13"/>
+                        <circle cx="6" cy="18" r="3"/>
+                        <circle cx="18" cy="16" r="3"/>
+                    </svg>
+                    <span>Old-time musicians</span>
+                </div>
+                <div class="audience-card">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M9 18V5l12-2v13"/>
+                        <circle cx="6" cy="18" r="3"/>
+                        <circle cx="18" cy="16" r="3"/>
+                    </svg>
+                    <span>Bluegrass players</span>
+                </div>
+                <div class="audience-card">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                        <polyline points="9 22 9 12 15 12 15 22"/>
+                    </svg>
+                    <span>Fiddle camps &amp; workshops</span>
+                </div>
+                <div class="audience-card">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                        <circle cx="9" cy="7" r="4"/>
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                    </svg>
+                    <span>Private lesson students</span>
+                </div>
+                <div class="audience-card">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M3 18v-6a9 9 0 0 1 18 0v6"/>
+                        <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3z"/>
+                        <path d="M3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/>
+                    </svg>
+                    <span>Acoustic jam goers</span>
+                </div>
+                <div class="audience-card">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                    </svg>
+                    <span>Tune collectors</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== 7. Common questions ===== -->
+    <section class="faq-section" id="faq">
+        <div class="faq-inner">
+            <h2>Common questions</h2>
+            <dl class="objections">
+                <div class="objection">
+                    <dt>Do I need a subscription?</dt>
+                    <dd>No &mdash; Woodshed is a one-time download. No account, no server, no recurring fees.</dd>
+                </div>
+                <div class="objection">
+                    <dt>Do my recordings sync across devices?</dt>
+                    <dd>Yes. Your library syncs automatically across iPhone, iPad, and Mac with iCloud.</dd>
+                </div>
+                <div class="objection">
+                    <dt>Can I export recordings?</dt>
+                    <dd>Yes. Share any video via AirDrop, Messages, Mail, or save directly to your Camera Roll.</dd>
+                </div>
+                <div class="objection">
+                    <dt>Is it okay to record at a jam?</dt>
+                    <dd>A quick &ldquo;mind if I grab that?&rdquo; goes a long way. Most musicians in the old-time and bluegrass world are generous about it.</dd>
+                </div>
+            </dl>
+            <a href="support.html" class="faq-support-link">More questions? Visit the support page &rarr;</a>
+        </div>
+    </section>
+
+    <!-- ===== 8. Footer ===== -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <img src="assets/app-icon-256.png" alt="Woodshed" />
+                <div>
+                    <span class="footer-title">Woodshed</span>
+                    <span class="footer-tagline">Tune Library. <strong>Record. Remember. Practice.</strong></span>
+                </div>
+            </div>
+            <div class="footer-cta">
+                <a href="https://apps.apple.com/app/id6768061433" class="app-store-badge" aria-label="Download Woodshed on the App Store">
+                    <svg viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/>
+                    </svg>
+                    <span class="label">
+                        <span class="small">Download on the</span>
+                        <span class="big">App Store</span>
+                    </span>
+                </a>
+                <p class="footer-device-note">Available for iPhone, iPad, and Mac</p>
+            </div>
+            <div class="footer-links">
+                <a href="support.html">Support</a>
+                <a href="privacy.html">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
 
     <script>
-      (function () {
+    (function () {
         var banner = document.getElementById("installBanner");
         var closeBtn = document.getElementById("installBannerClose");
         if (!banner || !closeBtn) return;
 
         var DISMISSED_KEY = "woodshed_install_banner_dismissed";
         var ua = navigator.userAgent;
-        var isMobile =
-          /Mobi|Android|iPhone|iPad|iPod/i.test(ua) || window.innerWidth < 768;
+        var isMobile = /Mobi|Android|iPhone|iPad|iPod/i.test(ua) || window.innerWidth < 768;
         var isIOS = /iPad|iPhone|iPod/.test(ua);
-        var isSafari = /^((?!chrome|android|crios|fxios|edgios).)*safari/i.test(
-          ua,
-        );
+        var isSafari = /^((?!chrome|android|crios|fxios|edgios).)*safari/i.test(ua);
         var nativeBannerWillShow = isIOS && isSafari;
         var dismissed = false;
-        try {
-          dismissed = window.localStorage.getItem(DISMISSED_KEY) === "1";
-        } catch (e) {}
+        try { dismissed = window.localStorage.getItem(DISMISSED_KEY) === "1"; } catch (e) {}
         if (isMobile && !nativeBannerWillShow && !dismissed) {
-          banner.classList.add("visible");
+            banner.classList.add("visible");
         }
         closeBtn.addEventListener("click", function () {
-          banner.classList.remove("visible");
-          try {
-            window.localStorage.setItem(DISMISSED_KEY, "1");
-          } catch (e) {}
+            banner.classList.remove("visible");
+            try { window.localStorage.setItem(DISMISSED_KEY, "1"); } catch (e) {}
         });
-      })();
+    })();
     </script>
-  </body>
+
+</body>
 </html>
