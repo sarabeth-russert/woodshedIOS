@@ -693,8 +693,9 @@ details li { margin-bottom: 0.3rem; }
 /* Hero device composition */
 .hero-devices {
     position: relative;
-    width: min(760px, 55vw);
+    width: min(912px, 66vw);
     aspect-ratio: 760 / 500;
+    transform: translateY(-40px);
 }
 
 /* --- MacBook (z-index 1, background anchor) --- */
