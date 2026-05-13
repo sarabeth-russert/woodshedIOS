@@ -504,36 +504,42 @@ details li { margin-bottom: 0.3rem; }
     right: 0;
     bottom: 0;
     z-index: 1;
-    filter: drop-shadow(0 20px 40px rgba(0,0,0,.35));
+    filter:
+        drop-shadow(0 32px 56px rgba(0,0,0,.55))
+        drop-shadow(0 8px 16px rgba(0,0,0,.30));
     transform: perspective(200px) rotateY(-2deg);
 }
 .hd-mb-lid {
-    background: #2c2c2c;
-    border-radius: 10px 10px 2px 2px;
-    padding: 18px 10px 8px;
+    background: linear-gradient(170deg, #3e3e3e 0%, #292929 55%, #1f1f1f 100%);
+    border-radius: 12px 12px 2px 2px;
+    padding: 10px 10px 7px;
     position: relative;
     box-shadow:
-        inset 0 0 0 1px rgba(255,255,255,0.07),
-        inset 0 1px 0 rgba(255,255,255,0.12);
+        inset 0 0 0 1px rgba(255,255,255,0.13),
+        inset 0 1px 0 rgba(255,255,255,0.22),
+        inset 0 -1px 0 rgba(0,0,0,0.5);
 }
-/* Camera dot */
+/* Notch */
 .hd-mb-lid::before {
     content: '';
     position: absolute;
-    top: 7px;
+    top: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 5px;
-    height: 5px;
-    background: #111;
-    border-radius: 50%;
-    box-shadow: 0 0 0 1.5px rgba(255,255,255,0.1);
+    width: 13%;
+    height: 10px;
+    background: #000;
+    border-radius: 0 0 6px 6px;
+    z-index: 2;
 }
 .hd-mb-screen {
     background: #000;
-    border-radius: 3px;
+    border-radius: 5px;
     overflow: hidden;
     aspect-ratio: 16 / 10;
+    box-shadow:
+        inset 0 0 0 1px rgba(0,0,0,0.9),
+        inset 0 1px 6px rgba(0,0,0,0.6);
 }
 .hd-mb-screen img {
     display: block;
@@ -541,41 +547,44 @@ details li { margin-bottom: 0.3rem; }
     height: 100%;
     object-fit: cover;
     object-position: top;
-    filter: brightness(1.15) contrast(1.05);
+    filter: brightness(1.1) contrast(1.04);
 }
 .hd-mb-hinge {
-    height: 4px;
-    background: linear-gradient(to bottom, #1a1a1a, #3c3c3c);
+    height: 3px;
+    background: linear-gradient(to bottom, #111, #2c2c2c);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.7);
 }
 .hd-mb-base {
-    background: linear-gradient(to bottom, #3c3c3c, #2c2c2c);
-    height: 28px;
-    border-radius: 0 0 5px 5px;
+    background: linear-gradient(to bottom, #303030 0%, #252525 50%, #1e1e1e 100%);
+    height: 22px;
+    border-radius: 0 0 6px 6px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 4px;
-    gap: 4px;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.4);
+    justify-content: center;
+    gap: 3px;
+    box-shadow:
+        0 4px 14px rgba(0,0,0,0.55),
+        inset 0 1px 0 rgba(255,255,255,0.07);
 }
 /* Keyboard row texture */
 .hd-mb-keys {
-    width: 80%;
-    height: 7px;
+    width: 82%;
+    height: 6px;
     background: repeating-linear-gradient(
         90deg,
-        rgba(255,255,255,0.06) 0px, rgba(255,255,255,0.06) 4px,
-        transparent 4px, transparent 6px
+        rgba(255,255,255,0.05) 0px, rgba(255,255,255,0.05) 3px,
+        transparent 3px, transparent 5px
     );
     border-radius: 1px;
 }
 /* Trackpad */
 .hd-mb-pad {
-    width: 16%;
-    height: 5px;
-    background: rgba(255,255,255,0.05);
-    border: 1px solid rgba(255,255,255,0.08);
-    border-radius: 2px;
+    width: 13%;
+    height: 4px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 1px;
 }
 
 /* --- iPad (z-index 2, midground) --- */
@@ -1144,7 +1153,7 @@ details li { margin-bottom: 0.3rem; }
     .hero-content { max-width: 100%; }
     .hero-cta { align-items: center; }
     .hero-devices { width: min(520px, 88vw); margin: 0 auto; }
-    .hd-mb-base { height: 18px; }
+    .hd-mb-base { height: 14px; }
     .hero-body { max-width: 100%; }
 
     .problem-inner,
