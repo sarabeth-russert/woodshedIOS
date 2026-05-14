@@ -880,6 +880,9 @@ details li { margin-bottom: 0.3rem; }
     transform: scale(0.97);
     transform-origin: center top;
 }
+.practice-device .device-mac-screen img {
+    object-position: 0% 75%;
+}
 
 /* --- Cross-device section --- */
 .crossdevice-section {
